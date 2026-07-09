@@ -1,0 +1,15 @@
+2026-07-09T12:17:29+02:00 | === Exercice 1: PowerShell 7.5.8 ===
+2026-07-09T12:17:29+02:00 | BaseUrl: http://localhost:5000/api/
+2026-07-09T12:17:31+02:00 | POST http://localhost:5000/api/products -> StatusCode=201
+2026-07-09T12:17:31+02:00 | Produit cree avec Id=3
+2026-07-09T12:17:33+02:00 | GET http://localhost:5000/api/products/3 -> StatusCode=200
+2026-07-09T12:17:33+02:00 | CHECK: Le nom du produit recupere correspond a 'Clavier AZERTY' -> PASS
+2026-07-09T12:17:35+02:00 | PUT http://localhost:5000/api/products/3 -> StatusCode=200
+2026-07-09T12:17:37+02:00 | GET http://localhost:5000/api/products/3 -> StatusCode=200
+2026-07-09T12:17:37+02:00 | CHECK: Quantity mise a jour a 185 -> PASS
+2026-07-09T12:17:37+02:00 | CHECK: UnitPrice mis a jour a 70.99 -> PASS
+2026-07-09T12:17:39+02:00 | DELETE http://localhost:5000/api/products/3 -> StatusCode=204
+2026-07-09T12:17:39+02:00 | CHECK: Suppression du produit acceptee par l'API -> PASS
+2026-07-09T12:17:41+02:00 | GET http://localhost:5000/api/products/3 -> StatusCode=404 | Erreur: Response status code does not indicate success: 404 (Not Found).
+2026-07-09T12:17:41+02:00 | CHECK: Le produit supprime renvoie un statut 404 -> PASS
+2026-07-09T12:17:41+02:00 | === Fin exercice01 ===
